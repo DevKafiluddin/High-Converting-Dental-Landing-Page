@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bright Smile Dental — Your Perfect Smile Starts Here</title>
+<meta name="description" content="Premium dental care in a calm, modern clinic. Dental implants, Invisalign and cosmetic dentistry. Book your appointment online in under 60 seconds." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a href="#" class="logo" aria-label="Bright Smile Dental">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2c-3 0-4 2-7 2s-3 4-3 7 1 11 4 11c2 0 2-4 3-6h6c1 2 1 6 3 6 3 0 4-8 4-11s0-7-3-7-4-2-7-2z"/></svg>
+      </span>
+      <span>Bright<span class="logo__dot">.</span>Smile</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why">Why us</a>
+      <a href="#gallery">Results</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav__cta">
+      <a href="tel:+15551234567" class="btn btn--ghost">Call</a>
+      <a href="#book" class="btn btn--primary">Book appointment</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <span class="pill"><span class="pill__dot"></span> Now accepting new patients</span>
+      <h1 class="h-display">Your perfect smile <em>starts here.</em></h1>
+      <p class="lede">Expert dental care, advanced treatments and personalized solutions designed around your confidence and comfort.</p>
+      <div class="hero__cta">
+        <a href="#book" class="btn btn--cta">Book your appointment →</a>
+        <a href="tel:+15551234567" class="btn btn--ghost btn--lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call now
+        </a>
+      </div>
+      <ul class="trust">
+        <li><strong>★★★★★</strong><span>Google Rated</span></li>
+        <li><strong>5,000+</strong><span>Happy patients</span></li>
+        <li><strong>Certified</strong><span>Specialists</span></li>
+        <li><strong>Same week</strong><span>Appointments</span></li>
+      </ul>
+    </div>
+    <div class="hero__media">
+      <div class="hero__imgwrap">
+        <img src="assets/hero.jpg" alt="Friendly dentist with a happy patient in a bright modern clinic" width="1408" height="1200" />
+      </div>
+      <div class="floatcard floatcard--tl">
+        <div class="floatcard__ic" style="background:#E8F5F3;color:#26A69A">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <div><strong>Pain-free</strong><span>Gentle sedation options</span></div>
+      </div>
+      <div class="floatcard floatcard--br">
+        <div class="stars">★★★★★</div>
+        <div><strong>4.9 / 5</strong><span>from 1,200+ reviews</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGOS STRIP -->
+<section class="strip">
+  <div class="wrap strip__inner">
+    <span>As trusted by patients insured with</span>
+    <div class="strip__logos" aria-hidden="true">
+      <span>Aetna</span><span>Cigna</span><span>Delta Dental</span><span>MetLife</span><span>United</span><span>Guardian</span>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="book" class="book">
+  <div class="wrap book__grid">
+    <div class="book__intro">
+      <span class="eyebrow">Online booking</span>
+      <h2 class="h-2">Reserve your visit in <em>60 seconds.</em></h2>
+      <p class="lede">Tell us a little about you and our team will confirm your appointment shortly — often within the same business hour.</p>
+      <ul class="checklist">
+        <li>Free first consultation</li>
+        <li>Transparent pricing, no surprises</li>
+        <li>Evening &amp; Saturday slots available</li>
+      </ul>
+    </div>
+    <form class="card form" onsubmit="event.preventDefault(); this.querySelector('.form__success').hidden=false; this.querySelector('.form__body').hidden=true;">
+      <div class="form__body">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" required placeholder="Jane Doe" />
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" required placeholder="(555) 123-4567" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" required placeholder="jane@email.com" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="treatment">Treatment interest</label>
+            <select id="treatment">
+              <option>General check-up</option>
+              <option>Dental implants</option>
+              <option>Invisalign</option>
+              <option>Cosmetic / whitening</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="time">Preferred time</label>
+            <select id="time">
+              <option>Weekday mornings</option>
+              <option>Weekday afternoons</option>
+              <option>Evenings</option>
+              <option>Saturdays</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn--cta btn--block" type="submit">Reserve my appointment</button>
+        <p class="microcopy">Only takes 60 seconds. Our team will confirm your appointment shortly.</p>
+      </div>
+      <div class="form__success" hidden>
+        <div class="form__check">✓</div>
+        <h3>Request received</h3>
+        <p>Thanks — a care coordinator will reach out to confirm your time within one business hour.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Core services</span>
+      <h2 class="h-2">Care designed around <em>your smile.</em></h2>
+    </div>
+    <div class="grid-3">
+      <article class="svc">
+        <div class="svc__img"><img src="assets/service-implants.jpg" alt="Dental implant" loading="lazy" width="900" height="700" /></div>
+        <div class="svc__body">
+          <h3>Dental implants</h3>
+          <p>Restore missing teeth with natural-looking, long-lasting implant solutions.</p>
+          <a href="#book" class="link">Learn more →</a>
+        </div>
+      </article>
+      <article class="svc">
+        <div class="svc__img"><img src="assets/service-invisalign.jpg" alt="Clear Invisalign aligner" loading="lazy" width="900" height="700" /></div>
+        <div class="svc__body">
+          <h3>Invisalign</h3>
+          <p>Straighten your smile discreetly with comfortable clear aligners.</p>
+          <a href="#book" class="link">Learn more →</a>
+        </div>
+      </article>
+      <article class="svc">
+        <div class="svc__img"><img src="assets/service-cosmetic.jpg" alt="Bright white cosmetic smile result" loading="lazy" width="900" height="700" /></div>
+        <div class="svc__body">
+          <h3>Cosmetic dentistry</h3>
+          <p>Transform your smile with whitening, veneers and smile makeover treatments.</p>
+          <a href="#book" class="link">Learn more →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="section section--alt">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Why choose us</span>
+      <h2 class="h-2">The details that make <em>the difference.</em></h2>
+    </div>
+    <div class="grid-3 grid-3--tight">
+      <div class="feat"><div class="feat__ic">🦷</div><h4>Experienced dentists</h4><p>A team of specialists with 15+ years of clinical experience.</p></div>
+      <div class="feat"><div class="feat__ic">⚙️</div><h4>Modern technology</h4><p>3D imaging, digital scans and CEREC same-day crowns.</p></div>
+      <div class="feat"><div class="feat__ic">💤</div><h4>Pain-free treatment</h4><p>Gentle techniques and sedation options for anxious patients.</p></div>
+      <div class="feat"><div class="feat__ic">💳</div><h4>Transparent pricing</h4><p>Upfront quotes — no surprises, ever.</p></div>
+      <div class="feat"><div class="feat__ic">🗓️</div><h4>Flexible payment plans</h4><p>0% financing options to fit any budget.</p></div>
+      <div class="feat"><div class="feat__ic">👨‍👩‍👧</div><h4>Family-friendly care</h4><p>From first teeth to full-mouth restoration.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Patient stories</span>
+      <h2 class="h-2">Loved by <em>thousands of smiles.</em></h2>
+      <div class="google">
+        <span class="google__ic">G</span>
+        <span><strong>4.9 · 1,247 Google reviews</strong><br /><span class="stars">★★★★★</span></span>
+      </div>
+    </div>
+    <div class="grid-3">
+      <figure class="quote">
+        <div class="stars">★★★★★</div>
+        <blockquote>"The entire team made my dental experience comfortable and stress-free. My smile transformation was amazing."</blockquote>
+        <figcaption>
+          <img src="assets/patient1.jpg" alt="" width="48" height="48" loading="lazy" />
+          <div><strong>Sarah M.</strong><span>Invisalign patient</span></div>
+        </figcaption>
+      </figure>
+      <figure class="quote">
+        <div class="stars">★★★★★</div>
+        <blockquote>"My dental implants completely restored my confidence. I can finally smile in photos again."</blockquote>
+        <figcaption>
+          <img src="assets/patient3.jpg" alt="" width="48" height="48" loading="lazy" />
+          <div><strong>Robert K.</strong><span>Implant patient</span></div>
+        </figcaption>
+      </figure>
+      <figure class="quote">
+        <div class="stars">★★★★★</div>
+        <blockquote>"From the first call to the last appointment, everything felt calm, clean and truly premium."</blockquote>
+        <figcaption>
+          <img src="assets/patient2.jpg" alt="" width="48" height="48" loading="lazy" />
+          <div><strong>David L.</strong><span>Whitening &amp; veneers</span></div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section id="gallery" class="section section--alt">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Before &amp; after</span>
+      <h2 class="h-2">Real results, <em>real patients.</em></h2>
+      <p class="lede lede--center">Drag the slider to reveal the transformation.</p>
+    </div>
+    <div class="ba" id="ba">
+      <img class="ba__img ba__img--after" src="assets/after.jpg" alt="After treatment" width="900" height="700" />
+      <div class="ba__clip" id="baClip">
+        <img class="ba__img" src="assets/before.jpg" alt="Before treatment" width="900" height="700" />
+      </div>
+      <div class="ba__handle" id="baHandle" role="slider" aria-label="Before after slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+        <span></span>
+      </div>
+      <span class="ba__tag ba__tag--l">Before</span>
+      <span class="ba__tag ba__tag--r">After</span>
+    </div>
+  </div>
+</section>
+
+<!-- DENTIST -->
+<section class="section">
+  <div class="wrap dentist">
+    <div class="dentist__media">
+      <img src="assets/dentist.jpg" alt="Dr. Michael Chen, lead dentist" loading="lazy" width="900" height="1100" />
+    </div>
+    <div class="dentist__body">
+      <span class="eyebrow">Meet your dentist</span>
+      <h2 class="h-2">Dr. Michael Chen, <em>DDS</em></h2>
+      <p class="lede">"I believe great dentistry should feel calm, honest and genuinely human. My team and I take the time to listen — then we build a plan around the smile you want."</p>
+      <ul class="creds">
+        <li><strong>15+</strong><span>Years of experience</span></li>
+        <li><strong>ADA</strong><span>Board certified</span></li>
+        <li><strong>AAID</strong><span>Implant fellowship</span></li>
+        <li><strong>Invisalign</strong><span>Platinum provider</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Your journey</span>
+      <h2 class="h-2">Four simple steps to a <em>new smile.</em></h2>
+    </div>
+    <ol class="steps">
+      <li><span class="steps__n">01</span><h4>Book appointment</h4><p>Reserve your slot online in under a minute.</p></li>
+      <li><span class="steps__n">02</span><h4>Dental consultation</h4><p>Meet your dentist for a full 3D exam.</p></li>
+      <li><span class="steps__n">03</span><h4>Personalized plan</h4><p>Clear options, upfront pricing, zero pressure.</p></li>
+      <li><span class="steps__n">04</span><h4>Beautiful smile</h4><p>Gentle treatment and lasting results.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Trust &amp; credibility</span>
+      <h2 class="h-2">Backed by the <em>best in dentistry.</em></h2>
+    </div>
+    <div class="badges">
+      <div class="badge">ADA<br /><span>American Dental Assoc.</span></div>
+      <div class="badge">AAID<br /><span>Implant Dentistry</span></div>
+      <div class="badge">Invisalign<br /><span>Platinum Provider</span></div>
+      <div class="badge">CEREC<br /><span>Same-day crowns</span></div>
+      <div class="badge">iTero<br /><span>Digital scanning</span></div>
+      <div class="badge">OSHA<br /><span>Safety certified</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section section--alt">
+  <div class="wrap wrap--narrow">
+    <div class="section__head">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="h-2">Answers to what patients <em>ask most.</em></h2>
+    </div>
+    <div class="faq">
+      <details><summary>How much does treatment cost?<span class="faq__ic">+</span></summary><p>Every mouth is different. After your free consultation you'll receive a written, itemized quote — with financing options if you need them.</p></details>
+      <details><summary>How long does Invisalign treatment take?<span class="faq__ic">+</span></summary><p>Most cases complete in 6 to 18 months, depending on complexity. We'll give you an exact timeline at your first visit.</p></details>
+      <details><summary>Are dental implants painful?<span class="faq__ic">+</span></summary><p>The procedure is done under local anesthetic and most patients report minimal discomfort. Sedation is available if you'd prefer.</p></details>
+      <details><summary>Do you offer payment plans?<span class="faq__ic">+</span></summary><p>Yes — 0% financing over 12 or 24 months is available on most treatments, subject to approval.</p></details>
+      <details><summary>How do I book an appointment?<span class="faq__ic">+</span></summary><p>Use the online form above or call us at (555) 123-4567. We confirm most requests within one business hour.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="finalcta">
+  <div class="wrap finalcta__inner">
+    <h2 class="h-display">Ready to love your <em>smile again?</em></h2>
+    <p class="lede">Schedule your consultation today and take the first step toward a healthier, confident smile.</p>
+    <div class="finalcta__btns">
+      <a href="#book" class="btn btn--cta btn--lg">Book appointment</a>
+      <a href="tel:+15551234567" class="btn btn--ghost-light btn--lg">Call our clinic</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <a href="#" class="logo logo--light">
+        <span class="logo__mark"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2c-3 0-4 2-7 2s-3 4-3 7 1 11 4 11c2 0 2-4 3-6h6c1 2 1 6 3 6 3 0 4-8 4-11s0-7-3-7-4-2-7-2z"/></svg></span>
+        <span>Bright<span class="logo__dot">.</span>Smile</span>
+      </a>
+      <p class="footer__about">Premium dental care in the heart of the city. Modern technology, human touch.</p>
+    </div>
+    <div>
+      <h5>Visit us</h5>
+      <p>123 Park Avenue, Suite 400<br />New York, NY 10016</p>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <p><a href="tel:+15551234567">(555) 123-4567</a><br /><a href="mailto:hello@brightsmile.co">hello@brightsmile.co</a></p>
+    </div>
+    <div>
+      <h5>Opening hours</h5>
+      <p>Mon–Fri &nbsp;8:00 – 19:00<br />Saturday &nbsp;9:00 – 15:00<br />Sunday &nbsp;Closed</p>
+    </div>
+  </div>
+  <div class="wrap footer__bar">
+    <span>© 2026 Bright Smile Dental. All rights reserved.</span>
+    <div class="footer__links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a></div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky">
+  <a href="tel:+15551234567" class="btn btn--ghost btn--block">Call</a>
+  <a href="#book" class="btn btn--cta btn--block">Book appointment</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
